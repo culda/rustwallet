@@ -6,7 +6,7 @@ use ethers::{
     signers::{coins_bip39::English, MnemonicBuilder, Signer, Wallet},
 };
 fn main() {
-    let phrase = "";
+    let phrase = ""; // <-- phrase here
 
     for i in 0..10 {
         let builder = MnemonicBuilder::<English>::default()
